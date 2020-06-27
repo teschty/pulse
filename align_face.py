@@ -31,8 +31,7 @@ output_dir = Path(args.output_dir)
 output_dir.mkdir(parents=True,exist_ok=True)
 
 print("Downloading Shape Predictor")
-# f=open_url("https://drive.google.com/uc?id=1huhv8PYpNNKbGCLOaYUjOgR1pY5pmbJx", cache_dir=cache_dir, return_path=True)
-f = open("synthesis.pt")
+f=open_url("https://drive.google.com/uc?id=1MCwBMkB1tQTD0BsfvKes4ZChaTNVpXo7", cache_dir=cache_dir, return_path=True)
 
 predictor = dlib.shape_predictor(f)
 
